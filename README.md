@@ -17,7 +17,7 @@ Mở Terminal trên Raspberry Pi và chạy các lệnh sau:
 
 # Tải về kịch bản cài đặt
 ```
-wget -O setup.bash [[https://raw.githubusercontent.com/Bigkatoan/picam/main/setup.bash](https://raw.githubusercontent.com/Bigkatoan/picam/main/setup.bash)](https://github.com/Bigkatoan/picam/blob/main/setup.bash)
+wget https://raw.githubusercontent.com/Bigkatoan/picam/refs/heads/main/setup.bash
 ```
 # Cấp quyền thực thi cho kịch bản
 ```
