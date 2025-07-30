@@ -1,10 +1,7 @@
 import time
 from picamera2 import Picamera2
 
-# --- Cấu hình ---
-# Số lượng khung hình để kiểm tra trước khi tính toán FPS
 NUM_FRAMES = 500
-# Độ phân giải camera (độ phân giải thấp hơn thường cho FPS cao hơn)
 RESOLUTION = (640, 480)
 
 # --- Khởi tạo camera ---
@@ -18,16 +15,11 @@ print("Camera đang khởi động...")
 time.sleep(1.0)
 print("Bắt đầu kiểm tra FPS...")
 
-# --- Vòng lặp đo lường ---
 frame_count = 0
 start_time = time.time()
 
 while frame_count < NUM_FRAMES:
-    # Bắt khung hình dưới dạng mảng NumPy
-    # Đây là thao tác cốt lõi bạn muốn đo lường
     frame = picam2.capture_array()
-    
-    # Tăng bộ đếm khung hình
     frame_count += 1
 
 # --- Tính toán và hiển thị kết quả ---
