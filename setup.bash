@@ -3,7 +3,7 @@ sudo apt upgrade
 sudo apt install python3 python3-pip python3-virtualenv python3-picamera2 -y
 sudo apt install libcap-dev -y
 
-python3 -m venv myenv --system-site-packages
+virtualenv venv --system-site-packages
 source venv/bin/activate
 pip install --upgrade pip
 
